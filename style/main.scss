@@ -1,0 +1,13 @@
+// Imports
+// Project settings
+@import './components/settings.scss';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font-family;
+}
