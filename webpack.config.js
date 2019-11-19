@@ -12,7 +12,9 @@ module.exports = {
     publicPath: './'
   },
   devServer: {
-    publicPath: '/src/'
+    publicPath: '/src/',
+    inline: true,
+    contentBase: '/src'
   },
   optimization: {
     splitChunks: {
