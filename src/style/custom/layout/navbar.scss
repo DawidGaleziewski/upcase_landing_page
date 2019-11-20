@@ -1,0 +1,25 @@
+.main-navbar {
+  padding: 1.5rem 15rem;
+  background-color: $bg-color-accent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    &__company {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    font-size: 1rem;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    &__item {
+      margin-left: 2rem;
+      font-weight: bold;
+    }
+  }
+}

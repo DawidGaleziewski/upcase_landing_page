@@ -1,27 +1,6 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 // Imports
 // Project settings
-@import './lib/normalize.scss';
-@import './components/settings.scss';
-@import './components/navbar.scss';
-
-body {
-  font-family: $primary-font-family;
-}
+@import './library/normalize.scss';
+@import './custom/settings.scss';
+@import './custom/global.scss';
+@import './custom/layout/navbar.scss';
