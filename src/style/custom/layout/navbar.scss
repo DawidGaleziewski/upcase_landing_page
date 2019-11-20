@@ -2,12 +2,13 @@
   padding: 1.5rem 15rem;
   background-color: $bg-color-accent;
   color: #fff;
+  border-bottom: $border-accent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .logo {
     &__company {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-transform: uppercase;
       font-weight: bold;
     }

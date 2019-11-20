@@ -1,6 +1,13 @@
-// Imports
-// Project settings
+// Libraries
 @import './library/normalize.scss';
+
+// Global styles
 @import './custom/settings.scss';
 @import './custom/global.scss';
+
+// Components
+@import './custom/components/buttons.scss';
+
+// Website layout
 @import './custom/layout/navbar.scss';
+@import './custom/layout/intro_section.scss';
