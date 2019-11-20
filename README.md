@@ -1,8 +1,28 @@
-# Basic project template
+# Static landing page project
 
-# todo: add jest
+# Development environment scripts and setup
 
-# stoped at: set distribution options
+## 0 Setup
+
+Download project and run:
+
+```
+npm install
+```
+
+Development scripts:
+
+- Run webpack-dev-server:
+
+```
+npm run start
+```
+
+- Build version:
+
+```
+npm run build
+```
 
 ## 1 bundler:
 
@@ -29,7 +49,7 @@ ESLint -> settings -> User -> extensions -> Eslint: Enable
 
 prettier
 
-## 6 Deployment to github:
+## 6 deployment to github:
 
 Deployment is done from branch gh-pages
 
