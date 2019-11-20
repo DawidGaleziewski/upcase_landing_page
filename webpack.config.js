@@ -12,9 +12,7 @@ module.exports = {
     publicPath: './'
   },
   devServer: {
-    publicPath: '/src/',
-    inline: true,
-    contentBase: '/src'
+    publicPath: '/src/'
   },
   optimization: {
     splitChunks: {
@@ -38,31 +36,18 @@ module.exports = {
       },
       // CSS
       {
-        test: /\.scss$/i,
+        test: /\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              modules: true,
-              sourceMap: true
+              publicPath: '../',
+              hmr: process.env.NODE_ENV === 'development'
             }
           },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: {
-                path: 'postcss.config.js'
-              }
-            }
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
-          }
+          'css-loader',
+          'postcss-loader',
+          'sass-loader'
         ]
       },
       // Images
@@ -79,13 +64,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new HTMLWebpackPlugin({
-      template: 'src/index.html'
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
       ignoreOrder: false
+    }),
+    new HTMLWebpackPlugin({
+      template: 'index.html'
     })
   ]
 };

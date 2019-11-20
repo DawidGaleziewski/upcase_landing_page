@@ -6,8 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "NODE_ENV=production npm run clean && webpack -p",
-    "start": "node.js ./src/index.js",
-    "server": "webpack-dev-server",
+    "start": "webpack-dev-server --open",
     "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
     "lint": "node ./node_modules/.bin/eslint ./src/index.js",
     "test": "jest"
