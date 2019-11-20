@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,7 +13,7 @@ module.exports = {
     publicPath: './'
   },
   devServer: {
-    publicPath: '/src/'
+    publicPath: '/'
   },
   optimization: {
     splitChunks: {
@@ -70,7 +71,8 @@ module.exports = {
       ignoreOrder: false
     }),
     new HTMLWebpackPlugin({
-      template: 'index.html'
-    })
+      template: './src/index.html'
+    }),
+    new CopyPlugin([{ from: './src/assets', to: './assets' }])
   ]
 };
