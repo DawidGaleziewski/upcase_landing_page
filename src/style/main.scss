@@ -1,9 +1,3 @@
-// Imports
-// Project settings
-@import './lib/normalize.scss';
-@import './components/settings.scss';
-@import './components/navbar.scss';
-
 *,
 *::after,
 *::before {
@@ -22,15 +16,12 @@ a {
   color: inherit;
 }
 
+// Imports
+// Project settings
+@import './lib/normalize.scss';
+@import './components/settings.scss';
+@import './components/navbar.scss';
+
 body {
   font-family: $primary-font-family;
 }
-
-//Needs to go to : http://localhost:8080/src/
-.main-navbar {
-  background: red;
-}
-
-// nav {
-//   background: red;
-// }
