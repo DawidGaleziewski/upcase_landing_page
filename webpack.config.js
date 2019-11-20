@@ -66,8 +66,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
+      filename: '[name].[chunkhash].css',
+      chunkFilename: '[id].[chunkhash].css',
       ignoreOrder: false
     }),
     new HTMLWebpackPlugin({

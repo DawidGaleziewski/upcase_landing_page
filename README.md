@@ -2,6 +2,8 @@
 
 # Development environment scripts and setup
 
+# To do: add chunk/hasing to css to avoid issues with browser caching
+
 ## 0 Setup
 
 Download project and run:
