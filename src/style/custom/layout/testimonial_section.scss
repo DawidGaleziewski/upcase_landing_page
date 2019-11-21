@@ -1,0 +1,50 @@
+.testimonial {
+  padding: $section-vertical-padding 0;
+  background-color: $bg-color-secondary;
+  text-align: left;
+  border-bottom: $border-section;
+  .entry {
+    max-width: 40rem;
+    margin: 0 auto;
+    &__description {
+      position: relative;
+      font-size: 1.2rem;
+      color: $font-color-secondary;
+      line-height: 2rem;
+      &--accent {
+        color: $font-color-accent-primary;
+        font-weight: bold;
+      }
+      &::after {
+        font-size: 2rem;
+        position: absolute;
+        content: '"';
+        top: 0;
+        left: -1rem;
+      }
+    }
+    .author {
+      color: $font-color-secondary;
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      &__icon {
+        width: 60px;
+        border-radius: 10px;
+      }
+
+      &__name {
+        margin-left: 1rem;
+        max-width: 10rem;
+        font-weight: bold;
+        display: inline-block;
+        line-height: 1.5rem;
+        // white-space: pre;
+      }
+
+      &__company {
+        font-weight: normal;
+      }
+    }
+  }
+}
