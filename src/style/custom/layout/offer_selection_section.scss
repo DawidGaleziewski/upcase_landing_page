@@ -1,6 +1,8 @@
 .offer-selection {
+  background-color: $bg-color-primary;
   border-bottom: $border-section;
   text-align: center;
+  padding: $section-vertical-padding 0;
 
   .section-header {
     color: $font-color-accent-primary;
@@ -30,6 +32,7 @@
       &__name {
         display: inline-block;
         margin-top: 1rem;
+        color: $font-color-secondary;
       }
     }
   }

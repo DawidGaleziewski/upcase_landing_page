@@ -2,7 +2,6 @@
 $bg-color-primary: #fff;
 $bg-color-accent: #ed3e43;
 $bg-color-secondary: #fcfdff;
-$bg-color-popup: #29292b;
 
 // Font colors
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
@@ -19,3 +18,6 @@ $card-border: 1px solid #f3f4f6;
 
 // Shadows
 $card-shadow: -1px 3px 5px 9px rgba(234, 241, 251, 0.71);
+
+// Paddings
+$section-vertical-padding: 4rem;

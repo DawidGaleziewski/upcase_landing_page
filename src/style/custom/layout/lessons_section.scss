@@ -1,0 +1,33 @@
+.lessons {
+  background-color: $bg-color-primary;
+  padding: $section-vertical-padding 0;
+  text-align: center;
+
+  .example {
+    margin: 1rem;
+    vertical-align: top;
+    width: 30rem;
+    min-height: 27rem;
+    background-color: $bg-color-primary;
+    display: inline-block;
+    text-align: left;
+    box-shadow: $card-shadow;
+    padding: 2rem;
+    border: $card-border;
+    display: inline-block;
+
+    &__header {
+      color: $font-color-accent-primary;
+    }
+
+    &__description {
+      color: $font-color-secondary;
+      line-height: 2rem;
+    }
+
+    &__image {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}

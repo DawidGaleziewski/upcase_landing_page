@@ -1,5 +1,6 @@
 .intro {
-  padding: 6rem 6rem 10rem 6rem;
+  padding: $section-vertical-padding 0 $section-vertical-padding * 2
+    $section-vertical-padding;
   text-align: center;
   &__header {
     font-weight: bold;
