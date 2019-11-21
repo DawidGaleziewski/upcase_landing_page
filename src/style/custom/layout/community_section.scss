@@ -1,8 +1,7 @@
 .community {
   text-align: center;
   border-top: $border-section;
-  border-bottom: $border-section;
-  background-color: $bg-color-primary;
+  background-color: $bg-color-secondary;
 
   .card {
     background-color: $bg-color-primary;
@@ -11,6 +10,7 @@
     text-align: center;
     box-shadow: $card-shadow;
     padding: 2rem;
+    border: $card-border;
 
     &__description {
       color: $font-color-secondary;

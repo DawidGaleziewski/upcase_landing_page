@@ -1,0 +1,35 @@
+.offer-selection {
+  text-align: center;
+
+  .section-header {
+    color: $font-color-accent-primary;
+  }
+
+  .stack-selection {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80rem;
+
+    .technology {
+      margin: 1rem;
+      border: $card-border;
+      border-bottom: 10px solid #fdebfb;
+      box-shadow: $card-shadow;
+      padding: 2rem 3rem;
+      text-align: center;
+      &__icon {
+        img {
+          width: 100px;
+          border-radius: 50px;
+        }
+      }
+
+      &__name {
+        display: inline-block;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
