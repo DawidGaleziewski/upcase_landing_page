@@ -1,7 +1,7 @@
 // Backgrounds
-$bg-color-primary: #fefefe;
+$bg-color-primary: #fff;
 $bg-color-accent: #ed3e43;
-$bg-color-secondary: #fdfdfd;
+$bg-color-secondary: #fcfdff;
 $bg-color-popup: #29292b;
 
 // Font colors
@@ -13,4 +13,8 @@ $font-color-accent-primary: #d33f4d;
 $font-color-accent-secondary: #d07932;
 
 // Borders
+$border-section: 1px solid #f0f1f3;
 $border-accent: 0.5px solid #aa2c2f;
+
+// Shadows
+$card-shadow: -1px 3px 5px 9px rgba(234, 241, 251, 0.71);

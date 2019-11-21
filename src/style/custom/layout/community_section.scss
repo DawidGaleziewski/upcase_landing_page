@@ -1,0 +1,33 @@
+.community {
+  text-align: center;
+  border-top: $border-section;
+  border-bottom: $border-section;
+  background-color: $bg-color-primary;
+
+  .card {
+    background-color: $bg-color-primary;
+    transform: translateY(-4rem);
+    display: inline-block;
+    text-align: center;
+    box-shadow: $card-shadow;
+    padding: 2rem;
+
+    &__description {
+      color: $font-color-secondary;
+      &--accent {
+        color: #e78b42;
+        font-style: normal;
+        font-weight: bold;
+      }
+
+      .link {
+        color: #4572cd;
+      }
+    }
+    &__image {
+      margin: 1.5rem 0;
+      width: 500px;
+      height: 300px;
+    }
+  }
+}
