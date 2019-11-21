@@ -1,0 +1,30 @@
+.media {
+  padding: $section-vertical-padding * 2 0;
+  .list {
+    display: flex;
+    justify-content: center;
+    &__item {
+      max-width: 17rem;
+
+      .list__icon {
+        width: 50px;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        border-bottom: 5px solid #eee3e1;
+        box-shadow: $card-shadow;
+        border: $card-border;
+      }
+
+      .list__header {
+        color: $font-color-accent-primary;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .list__description {
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
